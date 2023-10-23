@@ -6,6 +6,36 @@
   <title>Awama Hospital</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .picha{
+      width: 24.5%;
+      height: 30vh;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+
+    .x{
+      height: 30vh;
+    }
+  </style>
+
+
+
+
   <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Favicons -->
@@ -31,11 +61,11 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
   <link rel="stylesheet" href="static/assets/css/style.css">
 </head>
 <body>
@@ -46,7 +76,7 @@
       <i class="fas fa-envelope"></i> <a href="mailto:contact@example.com">omondijeff88@gmail.com</a>
       <i class="fas fa-phone"></i> +254 745 842774
     </div>
-     <div class="social-links text-center text-md-right pt-3 pt-md-0">
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
       <a href="#" class="twitter"><i class="bx bxl-twitter h3"></i></a>
       <a href="#" class="facebook"><i class="bx bxl-facebook h3"></i></a>
       <a href="#" class="instagram"><i class="bx bxl-instagram h3"></i></a>
@@ -88,16 +118,50 @@
 
   </div>
 </header><!-- End Header -->
-<br><br><br><br>
+<br>
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">
-  <div class="container">
-    <h1 class="logo me-auto">Welcome to Awama</h1>
-    <h2>We provide Recommendable Services</h2>
-    <a href="#about" class="btn-get-started scrollto">Get Started</a>
+  <div class="x row">
+    <div class="x col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1"></div>
+    <div class="x col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4"><div class="container">
+      <h1 class="logo me-auto">Welcome to Awama</h1>
+      <h2>We provide Recommendable Services</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+    </div>
+    <div class="x col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  class="picha" src="static/assets/img/departments-1.jpg" alt="Los Angeles">
+          </div>
+          <div class="carousel-item">
+            <img class="picha" src="static/assets/img/doctors/doctors-3.jpg" alt="Chicago">
+          </div>
+          <div class="carousel-item">
+            <img class="picha" src="static/assets/img/departments-5.jpg" alt="New York" >
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
   </div>
-  <img class="img-responsive rounded" src="static/assets/img/gallery/gallery-1.jpg"
-       alt="" style="height: 80vh;margin-top: 20px;width: 100%">
+  </div>
 </section><!-- End Hero -->
 <br><br><br><br><br><br><br>
 <!-- Registration and Login Modals -->
